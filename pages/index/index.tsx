@@ -99,7 +99,7 @@ function IndexPage() {
         <script type="text/javascript">
           const form = document.getElementById('mG61Hd'); function
           handleSubmit()
-          {"{"}window.location="success"{"}"}
+          {"{"}window?.location="success"{"}"}
           form.addEventListener('submit', handleSubmit);
         </script>
 

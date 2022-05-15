@@ -50,15 +50,21 @@ const PageBase = ({ children, title, description }: IPageBaseProps) => {
         <meta name="description" content={description || title} />
 
         <meta property="og:type" content="website" />
-        {location?.href && <meta property="og:url" content={location.href} />}
+        <meta
+          property="og:url"
+          content="https://pruthvi2103-feedback-deno.deno.dev/"
+        />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description || title} />
         <meta property="og:image" content={routes.assets.images.hero} />
 
         <meta property="twitter:card" content="summary_large_image" />
-        {location?.href && (
-          <meta property="twitter:url" content={location.href} />
-        )}
+
+        <meta
+          property="twitter:url"
+          content="https://pruthvi2103-feedback-deno.deno.dev/"
+        />
+
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description || title} />
         <meta

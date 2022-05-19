@@ -140,6 +140,12 @@ body {
   }
 }
 
+.thank-you-svg {
+  max-width: 100%;
+  width: 720px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
   .pruthvi-svg {
     display: block;

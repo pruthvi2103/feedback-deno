@@ -64,20 +64,20 @@ async function handler(req: Request): Promise<Response> {
   }
   // pages
   if (pathname.startsWith(routes.success)) {
-    return new Response(pages.success, {
+    return new Response(`<!DOCTYPE html>${pages.success}`, {
       headers: {
         "content-type": "text/html",
       },
     });
   }
   if (pathname === "/") {
-    return new Response(pages.index, {
+    return new Response(`<!DOCTYPE html>${pages.index}`, {
       headers: {
         "content-type": "text/html",
       },
     });
   }
-  return new Response(pages.notFound, {
+  return new Response(`<!DOCTYPE html>${pages.notFound}`, {
     headers: {
       "content-type": "text/html",
     },
